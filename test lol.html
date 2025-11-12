@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open iFrame Example</title>
+</head>
+<body>
+  <button onclick="webosu()">bloat</button>
+  <div id="iframe-container"></div>
+
+  <script>
+    function webosu() {
+      const container = document.getElementById("iframe-container");
+      container.innerHTML = "";
+
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://pythons.site/webosu";
+      iframe.width = "1024"; 
+      iframe.height = "768"; 
+      container.appendChild(iframe);
+    }
+  </script>
+</body>
+</html>
